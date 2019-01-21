@@ -1,47 +1,48 @@
 {
-  "name": "ayyo-websocket",
-  "version": "0.1.0",
-  "description": "Websocket adapter for ayyo",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "xo"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FallingSnow/ayyo-websocket.git"
-  },
-  "keywords": [
-    "ayyo"
-  ],
-  "author": "Ayrton Sparling",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/FallingSnow/ayyo-websocket/issues"
-  },
-  "homepage": "https://github.com/FallingSnow/ayyo-websocket#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run style"
+    "name": "ayyo-websocket",
+    "version": "0.1.0",
+    "description": "Websocket adapter for ayyo",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "style": "xo"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FallingSnow/ayyo-websocket.git"
+    },
+    "keywords": [
+        "ayyo"
+    ],
+    "author": "Ayrton Sparling",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/FallingSnow/ayyo-websocket/issues"
+    },
+    "homepage": "https://github.com/FallingSnow/ayyo-websocket#readme",
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run style"
+        }
+    },
+    "xo": {
+        "semicolon": true,
+        "space": 4,
+        "extends": [
+            "./.eslintrc.json"
+        ]
+    },
+    "dependencies": {
+        "ayyo": "git+https://github.com/FallingSnow/ayyo.git",
+        "esm": "3.0.84",
+        "simple-rpc": "git+https://github.com/FallingSnow/simple-rpc.git"
+    },
+    "devDependencies": {
+        "eslint": "^5.12.0",
+        "husky": "^1.3.1",
+        "xo": "^0.24.0"
+    },
+    "peerDependencies": {
+        "ayyo": "^0.1.0"
     }
-  },
-  "xo": {
-    "semicolon": true,
-    "space": 4,
-    "extends": [
-      "./.eslintrc.json"
-    ]
-  },
-  "dependencies": {
-    "esm": "3.0.84",
-    "simple-rpc": "git+https://github.com/FallingSnow/simple-rpc.git"
-  },
-  "devDependencies": {
-    "eslint": "^5.12.0",
-    "husky": "^1.3.1",
-    "xo": "^0.24.0"
-  },
-  "peerDependencies": {
-    "ayyo": "^0.1.0"
-  }
 }
